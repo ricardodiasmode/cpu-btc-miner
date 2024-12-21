@@ -133,7 +133,6 @@ class Miner
 {
     asio::ip::tcp::socket MinerSocket;
     work_data received_data;
-    bool IsFirstRead = true;
 
 public:
 
@@ -195,152 +194,59 @@ public:
         send_request(MinerSocket, solution_request);
     }
 
-    bool ParseExtraNoncesResponse(std::stringstream& ss, std::string& json_chunk) {
+    void ParseExtraNoncesResponse(json j) {
         // Extra nonce message like: {"error":null,"id":1,"result":[[["mining.notify","0000473d1"],["mining.set_difficulty","0000473d2"]],"0000473d",8]}
-        if (std::getline(ss, json_chunk, '}')) {
-            json_chunk += '}';  // Add the closing brace back
-
-            // Check if json_chunk is not empty and looks like a valid JSON object
-            if (json_chunk.empty() || json_chunk == "null") {
-                return false;  // Skip invalid or empty chunks
-            }
-
-            json j = json::parse(json_chunk);
-            std::string ExtraNonce1 = j["result"][1];
-            received_data.ExtraNonce1 = std::stoull(ExtraNonce1);
-            received_data.ExtraNonceSize2 = j["result"][2];
-            return true;
-        }
-        return false;
+        cout << "Parsing extra nonces..." << endl;
+        std::string ExtraNonce1 = j["result"][1];
+        received_data.ExtraNonce1 = std::stoull(ExtraNonce1);
+        received_data.ExtraNonceSize2 = j["result"][2];
     }
 
-    bool ParseSubscribeResponse(std::stringstream& ss, std::string& json_chunk) {
+    bool VerifyAuthorizeResponse(json j) {
         // Subscribe response message like: {"error":null,"id":2,"result":true}
-        if (std::getline(ss, json_chunk, '}')) {
-            json_chunk += '}';  // Add the closing brace back
+        cout << "Verifying authorization..." << endl;
+        if (!j["error"].is_null())
+        {
+            cerr << "Error on parse subscribe: " << j["error"] << endl;
+            return false;
+        }
+        if (!j["result"])
+        {
+            cerr << "Error on parse subscribe: " << "result is false." << endl;
+            return false;
+        }
+        cout << "Miner authorized." << endl;
+        return true;
+    }
 
-            // Check if json_chunk is not empty and looks like a valid JSON object
-            if (json_chunk.empty() || json_chunk == "null") {
-                return false;  // Skip invalid or empty chunks
-            }
+    void ParseWorkData(json j) {
+        if (DEBUG_WORK_DATA)
+            cout << "Working with data: " << j << endl;
 
-            json j = json::parse(json_chunk);
-            if (!j["error"].is_null())
-            {
-                cerr << "Error on parse subscribe: " << j["error"] << endl;
-                return false;
-            }
-            if (!j["result"])
-            {
-                cerr << "Error on parse subscribe: " << "result is false." << endl;
-                return false;
-            }
+        // Getting data
+        received_data.job_id = j["params"][0].get<std::string>();
+        received_data.prev_block_hash = j["params"][1].get<std::string>();
+        received_data.generation_tx_part1 = j["params"][2].get<std::string>();
+        received_data.generation_tx_part2 = j["params"][3].get<std::string>();
+
+        // Parse merkle branches
+        for (const auto& branch : j["params"][4]) {
+            received_data.merkle_branches.push_back(branch.get<std::string>());
+        }
+
+        // Parse other parameters
+        received_data.block_version = std::stoul(j["params"][5].get<std::string>(), nullptr, 16); // Convert hex to uint32_t
+        received_data.nBits = std::stoul(j["params"][6].get<std::string>(), nullptr, 16); // Convert hex to uint32_t
+        received_data.nTime = std::stoul(j["params"][7].get<std::string>(), nullptr, 16); // Convert hex to uint32_t
+        received_data.clean_jobs = j["params"][8].get<bool>();
+
+        if (!received_data.job_id.empty()) {
+            cout << "Received job_id: " << received_data.job_id << endl << endl;
         }
     }
 
-    bool ParseWorkData(std::stringstream& ss, std::string& json_chunk) {
-        while (std::getline(ss, json_chunk, '}')) {
-            json_chunk += '}';  // Add the closing brace back
-
-            // Check if json_chunk is not empty and looks like a valid JSON object
-            if (json_chunk.empty() || json_chunk == "null") {
-                return false;  // Skip invalid or empty chunks
-            }
-
-            try {
-                // Try parsing the current JSON chunk
-                json j = json::parse(json_chunk);
-
-                // Verify if it is a notify job
-                if (!j.contains("method"))
-                    return false;
-                if (j["method"] != "mining.notify")
-                    return false;
-
-                // Getting data
-                received_data.job_id = j["params"][0].get<std::string>();
-                received_data.prev_block_hash = j["params"][1].get<std::string>();
-                received_data.generation_tx_part1 = j["params"][2].get<std::string>();
-                received_data.generation_tx_part2 = j["params"][3].get<std::string>();
-
-                // Parse merkle branches
-                for (const auto& branch : j["params"][4]) {
-                    received_data.merkle_branches.push_back(branch.get<std::string>());
-                }
-
-                // Parse other parameters
-                received_data.block_version = std::stoul(j["params"][5].get<std::string>(), nullptr, 16); // Convert hex to uint32_t
-                received_data.nBits = std::stoul(j["params"][6].get<std::string>(), nullptr, 16); // Convert hex to uint32_t
-                received_data.nTime = std::stoul(j["params"][7].get<std::string>(), nullptr, 16); // Convert hex to uint32_t
-                received_data.clean_jobs = j["params"][8].get<bool>();
-
-                if (!received_data.job_id.empty()) {
-                    cout << "Received job_id: " << received_data.job_id << endl;
-                }
-                else {
-                    cerr << "Failed to parse work data correctly." << endl;
-                    return false;
-                }
-            }
-            catch (const json::exception& e) {
-                cerr << "Error parsing JSON chunk: " << e.what() << endl;
-                // Handle or accumulate error data as needed
-                return false;
-            }
-            return true;
-        }
-    }
-
-    bool ParseDifficultyData(std::stringstream& ss, std::string& json_chunk) {
-        if (std::getline(ss, json_chunk, '}')) {
-            json_chunk += '}';  // Add the closing brace back
-
-            // Check if json_chunk is not empty and looks like a valid JSON object
-            if (json_chunk.empty() || json_chunk == "null") {
-                return false;  // Skip invalid or empty chunks
-            }
-
-            try {
-                // Try parsing the current JSON chunk
-                json j = json::parse(json_chunk);
-
-                // Getting data
-                received_data.difficulty = j["params"][0].get<uint64_t>();
-            }
-            catch (const json::exception& e) {
-                cerr << "Error parsing JSON chunk: " << e.what() << endl;
-                // Handle or accumulate error data as needed
-                return false;
-            }
-            return true;
-        }
-    }
-
-    bool ParseFirstReadStuff(std::stringstream& ss, std::string& json_chunk)
-    {
-        IsFirstRead = false;
-
-        cout << "Start parsing extra nonces..." << endl;
-        if (!ParseExtraNoncesResponse(ss, json_chunk))
-        {
-            cout << "Failed to parse subscribe response." << endl;
-            return false;
-        }
-        cout << "Extra nonces parsed successfully. Parsing subscribe response..." << endl << endl;
-
-        if (!ParseSubscribeResponse(ss, json_chunk))
-        {
-            cout << "Failed to parse subscribe response." << endl;
-            return false;
-        }
-        cout << "Subscribe response parsed successfully. Parsing difficulty data..." << endl << endl;
-
-        if (!ParseDifficultyData(ss, json_chunk))
-        {
-            cout << "Failed to difficulty data." << endl;
-            return false;
-        }
-        cout << "Difficulty data parsed successfully." << endl << endl;
+    void ParseDifficultyData(json j) {
+        received_data.difficulty = j["params"][0].get<uint64_t>();
     }
 
     bool ReceiveWorkData()
@@ -367,73 +273,77 @@ public:
             std::string work_data(buffer.data(), bytes_read);
             accumulated_data += work_data;
 
-            // Process multiple JSON objects (if any)
-            std::stringstream ss(accumulated_data);
-            std::string json_chunk;
-
             if (DEBUG_WORK_DATA)
-                cout << "Work data: " << accumulated_data << endl << endl;
+                cout << "Server response: " << accumulated_data << endl << endl;
 
-            if (IsFirstRead &&
-                !ParseFirstReadStuff(ss, json_chunk))
-                return false;
-
-            if (!ParseWorkData(ss, json_chunk))
-            {
-                cout << "Failed to parse work data." << endl;
-                return false;
-            }
-            cout << "Work data parsed successfully." << endl << endl;
-
-            std::vector<std::string> messages;
-            std::string line;
             received_data.remainder_data = "";
 
-            while (std::getline(ss, line)) {
-                if (line.empty())
-                    continue;
+            std::string line;
+            std::stringstream ss(accumulated_data);
+            while (std::getline(ss, line, '}')) {
+
+                // Check if json_chunk is not empty and looks like a valid JSON object
+                if (line.empty() || line == "null") {
+                    return false;  // Skip invalid or empty chunks
+                }
 
                 try {
                     // Try parsing the current JSON chunk
-                    json j = json::parse(line);
+                    json j = json::parse(line + '}');
 
-                    if (j.contains("error"))
+                    if (j.contains("method"))
+                    {
+                        if (j["method"] == "mining.set_difficulty")
+                        {
+                            ParseDifficultyData(j);
+                        }
+                        else if (j["method"] == "mining.notify")
+                        {
+                            ParseWorkData(j);
+                        }
+                    }
+                    else if (j.contains("error") && j["error"].is_null())
+                    {
+                        switch (j["id"].get<uint8_t>())
+                        {
+                        case SUBSCRIBE_MESSAGE_ID:
+                            ParseExtraNoncesResponse(j);
+                            break;
+                        case AUTHORIZE_MESSAGE_ID:
+                            if (!VerifyAuthorizeResponse(j))
+                                return false;
+                            break;
+                        case SUBMIT_MESSAGE_ID:
+                            cout << "Error on submitting response: " << j["error"][1] << endl << endl;
+                            break;
+                        default:
+                            throw "Unexpected message id.";
+                            break;
+                        }
+                    }
+                    else if (j.contains("error") && !j["error"].is_null())
                     {
                         cout << "Remainder data parsed. We have an error: " << j["error"][1] << endl;
                         cout << "The error was given by message id: " << j["id"] << endl;
 
                         if (j["id"] == SUBMIT_MESSAGE_ID)
                             cout << "Means that our submit was ignored." << endl;
-                        
+
                         cout << endl;
-                    }
-                    else if (j.contains("method") &&
-                        j["method"] == "mining.notify") {
-                        if (DEBUG_WORK_DATA)
-                            cout << "Remainder data is a complete mining.notify. We will ignore it: " << line << endl << endl;
-                    }
-                    else {
-                        cout << "Could not identify wtf this is: " << line << endl << endl;
                     }
                 }
                 catch (const std::exception& e) {
                     if (line.find("mining.notify") != std::string::npos)
                     {
                         if (DEBUG_WORK_DATA)
-                            cout << "Parse remainder found. We are good to go: " << line << endl;
+                            cout << "Parse remainder found. We are good to go: " << line << endl << endl;
+                    }
+                    received_data.remainder_data = line;
 
-                        received_data.remainder_data = line;
-                        if (DEBUG_WORK_DATA)
-                            cout << "Request remainder data: " << received_data.remainder_data << endl << endl;
-                    }
-                    else {
-                        cerr << "Error during remainder reception: " << e.what() << endl;
-                        return false;
-                    }
+                    if (DEBUG_WORK_DATA)
+                        cout << "Request remainder data: " << received_data.remainder_data << endl << endl;
                 }
             }
-
-            
         }
         catch (const std::exception& e) {
             cerr << "Error during work data reception: " << e.what() << endl;
