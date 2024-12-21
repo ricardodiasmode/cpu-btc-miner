@@ -1,0 +1,8 @@
+Package: boost-bind
+Version: 1.85.0
+Port-Version: 1
+Depends: boost-cmake, boost-config, boost-core, boost-headers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f4f494c6141705e9192bc3a8d36825a7c48e6c4bcbb04f5eaf3585f65c94853d
+Description: Boost bind module

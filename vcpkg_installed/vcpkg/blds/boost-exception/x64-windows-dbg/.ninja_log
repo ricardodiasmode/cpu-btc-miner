@@ -1,0 +1,4 @@
+# ninja log v5
+3	58	7562749084829169	libs/exception/CMakeFiles/boost_exception.dir/src/clone_current_exception_non_intrusive.cpp.obj	b53dbd8d1dcb4262
+60	120	7562749085288192	stage/lib/boost_exception-vc144-mt-gd-x64-1_85.lib	f3e79757644b8cff
+120	608	0	CMakeFiles/install.util	8461bf48165748dd

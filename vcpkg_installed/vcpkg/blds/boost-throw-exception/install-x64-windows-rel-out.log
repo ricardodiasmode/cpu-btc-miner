@@ -1,0 +1,14 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-throw-exception/x64-windows-rel'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+-- Install configuration: "Release"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/include/boost/exception
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/include/boost/exception/exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/include/boost/throw_exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/lib/cmake/boost_throw_exception-1.85.0/boost_throw_exception-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/lib/cmake/boost_throw_exception-1.85.0/boost_throw_exception-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/lib/cmake/boost_throw_exception-1.85.0/boost_throw_exception-config-version.cmake
+[0/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-throw-exception\x64-windows-rel && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

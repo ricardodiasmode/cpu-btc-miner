@@ -1,0 +1,15 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/tests.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/check.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/tests-quick.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/check-quick.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/edit_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/rebuild_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/list_install_components.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/install.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/CMakeFiles/install/local.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/libs/coroutine/CMakeFiles/boost_coroutine.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/libs/coroutine/CMakeFiles/edit_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/libs/coroutine/CMakeFiles/rebuild_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/libs/coroutine/CMakeFiles/list_install_components.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/libs/coroutine/CMakeFiles/install.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-coroutine/x64-windows-rel/libs/coroutine/CMakeFiles/install/local.dir

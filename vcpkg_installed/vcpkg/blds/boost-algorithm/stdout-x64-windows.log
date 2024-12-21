@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/algorithm/archive/boost-1.85.0.tar.gz -> boostorg-algorithm-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-algorithm-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-algorithm/src/ost-1.85.0-4e43b98679.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-algorithm_x64-windows/share/boost-algorithm/copyright
+-- Performing post-build validation

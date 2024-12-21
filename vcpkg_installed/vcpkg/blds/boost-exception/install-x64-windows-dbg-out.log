@@ -1,0 +1,45 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-exception/x64-windows-dbg'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+[1/3] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP  -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-exception\src\ost-1.85.0-fc4b0a7a6e.clean\libs\exception\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /D_DEBUG /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /Folibs\exception\CMakeFiles\boost_exception.dir\src\clone_current_exception_non_intrusive.cpp.obj /Fdstage\lib\boost_exception-vc144-mt-gd-x64-1_85.pdb /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-exception\src\ost-1.85.0-fc4b0a7a6e.clean\libs\exception\src\clone_current_exception_non_intrusive.cpp
+[2/3] C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\lib.exe  /machine:x64 /nologo /out:stage\lib\boost_exception-vc144-mt-gd-x64-1_85.lib libs\exception\CMakeFiles\boost_exception.di-- Install configuration: "Debug"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/all.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/current_exception_cast.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/clone_current_exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/error_info_impl.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/exception_ptr.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/is_output_streamable.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/object_hex_dump.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/requires_cxx11.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/shared_ptr.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/detail/type_info.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/diagnostic_information.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/enable_current_exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/enable_error_info.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_api_function.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_at_line.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_errno.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_file_handle.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_file_name.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_file_open_mode.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_nested_exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/errinfo_type_info_name.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/error_info.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/get_error_info.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/info.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/info_tuple.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/to_string.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception/to_string_stub.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/include/boost/exception_ptr.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/lib/boost_exception-vc144-mt-gd-x64-1_85.lib
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/lib/cmake/boost_exception-1.85.0/boost_exception-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/lib/cmake/boost_exception-1.85.0/boost_exception-targets-debug.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/lib/cmake/boost_exception-1.85.0/boost_exception-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-exception_x64-windows/debug/lib/cmake/boost_exception-1.85.0/boost_exception-config-version.cmake
+r\src\clone_current_exception_non_intrusive.cpp.obj && cd ."
+[2/3] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-exception\x64-windows-dbg && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

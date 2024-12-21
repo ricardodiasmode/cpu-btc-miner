@@ -1,0 +1,30 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-optional/x64-windows-rel'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+-- Install configuration: "Release"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/none.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/none_t.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/bad_optional_access.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/experimental_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/old_optional_implementation.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_aligned_storage.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_config.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_factory_support.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_hash.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_reference_spec.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_relops.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_swap.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/detail/optional_trivially_copyable_base.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/optional.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/optional_fwd.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional/optional_io.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/include/boost/optional.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/lib/cmake/boost_optional-1.85.0/boost_optional-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/lib/cmake/boost_optional-1.85.0/boost_optional-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-optional_x64-windows/lib/cmake/boost_optional-1.85.0/boost_optional-config-version.cmake
+[0/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-optional\x64-windows-rel && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

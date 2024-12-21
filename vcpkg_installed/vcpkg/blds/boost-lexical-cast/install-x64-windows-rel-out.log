@@ -1,0 +1,29 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-lexical-cast/x64-windows-rel'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+-- Install configuration: "Release"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/detail/basic_pointerbuf.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/detail/lcast_precision.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/bad_lexical_cast.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/buffer_view.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/converter_lexical.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/converter_lexical_streams.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/converter_numeric.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/inf_nan.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/is_character.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/lcast_basic_unlockedbuf.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/lcast_char_constants.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/detail/widest_char.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast/try_lexical_convert.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/include/boost/lexical_cast.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/lib/cmake/boost_lexical_cast-1.85.0/boost_lexical_cast-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/lib/cmake/boost_lexical_cast-1.85.0/boost_lexical_cast-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-lexical-cast_x64-windows/lib/cmake/boost_lexical_cast-1.85.0/boost_lexical_cast-config-version.cmake
+[0/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-lexical-cast\x64-windows-rel && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

@@ -1,0 +1,7 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/include/boost/tuple/detail/tuple_basic.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/include/boost/tuple/tuple.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/include/boost/tuple/tuple_comparison.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/include/boost/tuple/tuple_io.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/lib/cmake/boost_tuple-1.85.0/boost_tuple-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/lib/cmake/boost_tuple-1.85.0/boost_tuple-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tuple_x64-windows/lib/cmake/boost_tuple-1.85.0/boost_tuple-config-version.cmake

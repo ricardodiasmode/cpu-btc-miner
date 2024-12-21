@@ -1,0 +1,6 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/include/boost/tokenizer.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/include/boost/token_functions.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/include/boost/token_iterator.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/lib/cmake/boost_tokenizer-1.85.0/boost_tokenizer-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/lib/cmake/boost_tokenizer-1.85.0/boost_tokenizer-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/lib/cmake/boost_tokenizer-1.85.0/boost_tokenizer-config-version.cmake

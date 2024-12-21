@@ -1,0 +1,7 @@
+libdir=C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\openssl_x64-windows\lib
+includedir=C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\openssl_x64-windows\include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 3.3.0
+Requires: libssl libcrypto

@@ -1,0 +1,6 @@
+Checking patch Configurations/windows-makefile.tmpl...
+Hunk #2 succeeded at 581 (offset 11 lines).
+Hunk #3 succeeded at 593 (offset 11 lines).
+Hunk #4 succeeded at 607 (offset 11 lines).
+Hunk #5 succeeded at 620 (offset 11 lines).
+Applied patch Configurations/windows-makefile.tmpl cleanly.

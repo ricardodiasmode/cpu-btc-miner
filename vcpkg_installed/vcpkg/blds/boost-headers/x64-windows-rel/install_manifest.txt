@@ -1,0 +1,4 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-headers_x64-windows/include/boost/headers/.gitkeep
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-headers_x64-windows/lib/cmake/boost_headers-1.85.0/boost_headers-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-headers_x64-windows/lib/cmake/boost_headers-1.85.0/boost_headers-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-headers_x64-windows/lib/cmake/boost_headers-1.85.0/boost_headers-config-version.cmake

@@ -1,0 +1,27 @@
+-- Downloading https://github.com/boostorg/boost/archive/boost-1.85.0.tar.gz -> boostorg-boost-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-boost-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-cmake/src/ost-1.85.0-27110fc97f.clean
+-- Downloading https://github.com/boostorg/cmake/archive/boost-1.85.0.tar.gz -> boostorg-cmake-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-cmake-boost-1.85.0.tar.gz
+-- Applying patch vcpkg-build.diff
+-- Applying patch fix-mpi.diff
+-- Applying patch no-prefix.diff
+-- Applying patch zstd.diff
+-- Applying patch add-optional-deps.diff
+-- Applying patch fix-missing-archs.diff
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-cmake/src/ost-1.85.0-eff32fc7be.clean
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost-cmake/usage
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Up-to-date: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostFetch.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostInstall.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostMessage.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostRoot.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostTest.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/cmake-build/BoostTestJamfile.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost-cmake/vcpkg-port-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost-cmake/copyright
+-- Performing post-build validation

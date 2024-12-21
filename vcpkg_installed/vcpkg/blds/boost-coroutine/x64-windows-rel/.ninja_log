@@ -1,0 +1,7 @@
+# ninja log v5
+4	94	7562749348162307	libs/coroutine/CMakeFiles/boost_coroutine.dir/src/detail/coroutine_context.cpp.obj	910dd4c7d4f5c452
+10	422	7562749351262598	libs/coroutine/CMakeFiles/boost_coroutine.dir/src/exceptions.cpp.obj	fb4f8c22145760e2
+13	423	7562749351464222	libs/coroutine/CMakeFiles/boost_coroutine.dir/src/windows/stack_traits.cpp.obj	dfd293e2de5d9cff
+423	725	7562749354519150	stage/bin/boost_coroutine-vc144-mt-x64-1_85.dll	fbc5450733e87404
+423	725	7562749354519150	stage/lib/boost_coroutine-vc144-mt-x64-1_85.lib	fbc5450733e87404
+725	1041	0	CMakeFiles/install.util	d4d6029ad51486ec

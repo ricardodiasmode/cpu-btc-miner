@@ -1,0 +1,11 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/detail/buffer_fill.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/detail/ostream_guard.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/ios_state.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/nullstream.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/ostream_joiner.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/ostream_put.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io/quoted.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/include/boost/io_fwd.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/lib/cmake/boost_io-1.85.0/boost_io-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/lib/cmake/boost_io-1.85.0/boost_io-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-io_x64-windows/lib/cmake/boost_io-1.85.0/boost_io-config-version.cmake

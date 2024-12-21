@@ -1,0 +1,12 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): warning MSB8018: No outputs specified for item "kernel.cu". Its custom build command will be skipped.
+  The vcpkg manifest was disabled, but we found a manifest file in C:\Users\ricar\source\repos\btc-miner\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  btc-miner.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+C:\Users\ricar\source\repos\btc-miner\btc-miner\btc-miner.cpp(393): warning C4715: 'Miner::ReceiveWorkData': not all control paths return a value
+C:\Users\ricar\source\repos\btc-miner\btc-miner\btc-miner.cpp(312): warning C4715: 'Miner::ParseDifficultyData': not all control paths return a value
+C:\Users\ricar\source\repos\btc-miner\btc-miner\btc-miner.cpp(234): warning C4715: 'Miner::ParseSubscribeResponse': not all control paths return a value
+C:\Users\ricar\source\repos\btc-miner\btc-miner\btc-miner.cpp(287): warning C4715: 'Miner::ParseWorkData': not all control paths return a value
+  btc-miner.vcxproj -> C:\Users\ricar\source\repos\btc-miner\x64\Debug\btc-miner.exe

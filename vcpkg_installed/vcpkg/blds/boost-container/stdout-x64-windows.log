@@ -1,0 +1,11 @@
+-- Downloading https://github.com/boostorg/container/archive/boost-1.85.0.tar.gz -> boostorg-container-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-container-boost-1.85.0.tar.gz
+-- Applying patch no-static-assert.diff
+-- Applying patch posix-threads.diff
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/src/ost-1.85.0-d913403ed0.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/share/boost-container/copyright
+-- Performing post-build validation

@@ -1,0 +1,29 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/fmt/x64-windows-dbg'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+[1/4] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DFMT_LIB_EXPORT -Dfmt_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\fmt\src\10.2.1-a991065f88.clean\include /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /D_DEBUG /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\fmt.dir\src\os.cc.obj /Fdfmtd.pdb /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\fmt\src\10.2.1-a991065f88.clean\src\os.cc
+[2/4] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DFMT_LIB_EXPORT -Dfmt_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\fmt\src\10.2.1-a991065f88.clean\include /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /D_DEBUG /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\fmt.dir\src\format.cc.obj /Fdfmtd.pdb /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\fmt\src\10.2.1-a991065f88.clean\src\format.cc
+[3/4] C:\WINDOWS\system32\cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_dll --intdir=CMakeFiles\fmt.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\link.exe  CMakeFiles\fmt.dir\src\format.cc.obj CMakeFiles\fmt.dir\src\os.cc.obj  /out:bin\fmtd.dll /implib:fmtd.-- Install configuration: "Debug"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/lib/fmtd.lib
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/bin/fmtd.dll
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/args.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/chrono.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/color.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/compile.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/core.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/format.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/format-inl.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/os.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/ostream.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/printf.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/ranges.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/std.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/include/fmt/xchar.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/share/fmt/fmt-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/share/fmt/fmt-config-version.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/share/fmt/fmt-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/share/fmt/fmt-targets-debug.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/debug/lib/pkgconfig/fmt.pc
+lib /pdb:bin\fmtd.pdb /dll /version:10.2 /machine:x64 /nologo    /debug /INCREMENTAL  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+[3/4] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\fmt\x64-windows-dbg && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

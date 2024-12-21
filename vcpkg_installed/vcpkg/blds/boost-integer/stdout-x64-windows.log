@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/integer/archive/boost-1.85.0.tar.gz -> boostorg-integer-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-integer-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-integer/src/ost-1.85.0-3be0b59648.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/share/boost-integer/copyright
+-- Performing post-build validation

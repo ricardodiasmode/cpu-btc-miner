@@ -1,0 +1,2 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/BoostConfigVersion.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-cmake_x64-windows/share/boost/BoostConfig.cmake

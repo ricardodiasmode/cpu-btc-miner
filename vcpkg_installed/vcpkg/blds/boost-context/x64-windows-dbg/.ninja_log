@@ -1,0 +1,8 @@
+# ninja log v5
+3	31	7562749274630466	libs/context/CMakeFiles/boost_context.dir/src/asm/make_x86_64_ms_pe_masm.asm.obj	d7b2e509144b5acb
+9	33	7562749274620455	libs/context/CMakeFiles/boost_context.dir/src/asm/ontop_x86_64_ms_pe_masm.asm.obj	984f6a20637a26ed
+7	33	7562749274620455	libs/context/CMakeFiles/boost_context.dir/src/asm/jump_x86_64_ms_pe_masm.asm.obj	c8fe868b0bec2ef9
+12	421	7562749278612919	libs/context/CMakeFiles/boost_context.dir/src/windows/stack_traits.cpp.obj	23f9c40c89de6bbe
+422	810	7562749282352541	stage/bin/boost_context-vc144-mt-gd-x64-1_85.dll	7fb0df6ed0b89ce0
+422	810	7562749282352541	stage/lib/boost_context-vc144-mt-gd-x64-1_85.lib	7fb0df6ed0b89ce0
+811	1500	0	CMakeFiles/install.util	63aaefa3d13b276f

@@ -1,0 +1,7 @@
+Package: cuda
+Version: 10.1
+Port-Version: 13
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6500d84ee2c6b447c17f973b0c4f8a190e63ba44d9620570c97bde4a222f2d29
+Description: A parallel computing platform and programming model

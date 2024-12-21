@@ -1,0 +1,131 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-rel'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+[1/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\dlmalloc.cpp.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\dlmalloc.cpp
+[2/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\global_resource.cpp.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\global_resource.cpp
+[3/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\unsynchronized_pool_resource.cpp.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\unsynchronized_pool_resource.cpp
+[4/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\synchronized_pool_resource.cpp.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\synchronized_pool_resource.cpp
+[5/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\monotonic_buffer_resource.cpp.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\monotonic_buffer_resource.cpp
+[6/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\pool_resource.cpp.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\pool_resource.cpp
+[7/9] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -Dboost_container_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /showIncludes /Folibs\container\CMakeFiles\boost_container.dir\src\alloc_lib.c.obj /Fdlibs\container\CMakeFiles\boost_container.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\src\ost-1.85.0-d913403ed0.clean\libs\container\src\alloc_lib.c
+[8/9] C:\WINDOWS\system32\cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_dll --intdir=libs\container\CMakeFiles\boost_container.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\link.exe  libs\container\CMakeFiles\boost_container.dir\src\alloc_lib.c.obj libs\container\CMakeFiles\boost_container.dir\src\dlmalloc.cpp.obj libs\container\CMakeFiles\boost_container.dir\src\global_resource.cpp.obj libs\container\CMakeFiles\boost_container.dir\src\monotonic_buffer_resource.cpp.obj libs\container\CMakeFiles\boost_container.dir\src\pool_resource.cpp.obj libs\container\CMakeFiles\boost_container.dir\src\synchronized_pool_resource.cpp.obj libs\container\CMakeFiles\boost_container.dir\src\unsynchronized_pool_resource.cpp.obj  /out:stage\bin\boost_container-vc144-mt-x64-1_85.dll /implib:stage\lib\boost_container-vc144-mt-x64-1_85.lib /pdb:stage\bin\boost_container-vc144-mt-x64-1_85.pdb /dll /version:1.85 /machine:x64 /nologo /DEBUG /INCREMENTAL:NO /OPT:REF /OPT:ICF  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+[8/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-container\x64-windows-rel && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Common-- Install configuration: "Release"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/adaptive_pool.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/allocator_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/container_fwd.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/deque.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/adaptive_node_pool.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/adaptive_node_pool_impl.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/addressof.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/advanced_insert_int.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/algorithm.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/allocation_type.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/allocator_version_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/alloc_helpers.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/alloc_lib.h
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/auto_link.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/block_list.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/block_slist.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/compare_functors.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/config_begin.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/config_end.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/construct_in_place.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/container_or_allocator_rebind.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/container_rebind.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/copy_move_algo.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/destroyers.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/dispatch_uses_allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/dlmalloc.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/flat_tree.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/function_detector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/guards_dended.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/is_container.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/is_contiguous_container.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/is_pair.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/is_sorted.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/iterator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/iterators.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/iterator_to_raw_pointer.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/math_functions.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/minimal_char_traits_header.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/min_max.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/mpl.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/multiallocation_chain.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/mutex.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/next_capacity.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/node_alloc_holder.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/node_pool.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/node_pool_impl.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/pair.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/pair_key_mapped_of_value.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/placement_new.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/pool_common.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/pool_common_alloc.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/pool_resource.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/singleton.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/std_fwd.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/thread_mutex.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/transform_iterator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/tree.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/type_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/value_functors.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/value_init.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/variadic_templates_tools.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/version_type.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/detail/workaround.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/devector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/flat_map.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/flat_set.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/list.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/map.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/new_allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/node_allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/node_handle.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/options.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/deque.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/devector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/flat_map.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/flat_set.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/global_resource.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/list.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/map.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/memory_resource.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/monotonic_buffer_resource.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/polymorphic_allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/pool_options.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/resource_adaptor.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/set.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/slist.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/small_vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/stable_vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/string.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/synchronized_pool_resource.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/unsynchronized_pool_resource.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/pmr/vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/scoped_allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/scoped_allocator_fwd.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/set.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/slist.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/small_vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/stable_vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/static_vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/string.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/throw_exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/uses_allocator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/uses_allocator_fwd.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/include/boost/container/vector.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/lib/boost_container-vc144-mt-x64-1_85.lib
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/bin/boost_container-vc144-mt-x64-1_85.dll
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/bin/boost_container-vc144-mt-x64-1_85.pdb
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/lib/cmake/boost_container-1.85.0/boost_container-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/lib/cmake/boost_container-1.85.0/boost_container-targets-release.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/lib/cmake/boost_container-1.85.0/boost_container-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container_x64-windows/lib/cmake/boost_container-1.85.0/boost_container-config-version.cmake
+Extensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

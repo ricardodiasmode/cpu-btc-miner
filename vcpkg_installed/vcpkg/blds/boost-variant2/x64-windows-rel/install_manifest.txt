@@ -1,0 +1,5 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-variant2_x64-windows/include/boost/variant2/variant.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-variant2_x64-windows/include/boost/variant2.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-variant2_x64-windows/lib/cmake/boost_variant2-1.85.0/boost_variant2-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-variant2_x64-windows/lib/cmake/boost_variant2-1.85.0/boost_variant2-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-variant2_x64-windows/lib/cmake/boost_variant2-1.85.0/boost_variant2-config-version.cmake

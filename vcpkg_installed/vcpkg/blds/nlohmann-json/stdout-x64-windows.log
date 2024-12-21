@@ -1,0 +1,14 @@
+-- Downloading https://github.com/nlohmann/json/archive/v3.11.3.tar.gz -> nlohmann-json-v3.11.3.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/nlohmann-json-v3.11.3.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/nlohmann-json/src/v3.11.3-434e7fbc3e.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/share/pkgconfig/nlohmann_json.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.2.0-1-any.pkg.tar.zst.
+-- Using cached msys2-msys2-runtime-3.4.10-4-x86_64.pkg.tar.zst.
+-- Using msys root at C:/Users/ricar/AppData/Local/vcpkg/downloads/tools/msys2/d33df895d441a36d
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/share/pkgconfig/nlohmann_json.pc
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/share/nlohmann-json/copyright
+-- Performing post-build validation

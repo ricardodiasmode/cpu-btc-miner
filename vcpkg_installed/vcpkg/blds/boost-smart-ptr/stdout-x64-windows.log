@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/smart_ptr/archive/boost-1.85.0.tar.gz -> boostorg-smart_ptr-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-smart_ptr-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-smart-ptr/src/ost-1.85.0-cd8f0d6348.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-smart-ptr_x64-windows/share/boost-smart-ptr/copyright
+-- Performing post-build validation

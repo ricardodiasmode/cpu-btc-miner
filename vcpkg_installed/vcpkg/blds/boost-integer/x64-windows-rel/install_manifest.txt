@@ -1,0 +1,16 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/common_factor.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/common_factor_ct.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/common_factor_rt.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/extended_euclidean.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/integer_log2.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/integer_mask.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/mod_inverse.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/static_log2.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer/static_min_max.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer_fwd.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/integer_traits.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/include/boost/pending/integer_log2.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/lib/cmake/boost_integer-1.85.0/boost_integer-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/lib/cmake/boost_integer-1.85.0/boost_integer-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-integer_x64-windows/lib/cmake/boost_integer-1.85.0/boost_integer-config-version.cmake

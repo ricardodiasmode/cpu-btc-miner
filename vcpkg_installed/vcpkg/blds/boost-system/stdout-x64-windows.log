@@ -1,0 +1,21 @@
+CMake Warning at scripts/cmake/vcpkg_buildpath_length_warning.cmake:4 (message):
+  boost-system's buildsystem uses very long paths and may fail on your
+  system.
+
+  We recommend moving vcpkg to a short path such as 'C:\src\vcpkg' or using
+  the subst command.
+Call Stack (most recent call first):
+  C:/Users/ricar/AppData/Local/vcpkg/registries/git-trees/2c672a1cf95767d7ced16740ba9bf8810d67e051/portfile.cmake:3 (vcpkg_buildpath_length_warning)
+  scripts/ports.cmake:175 (include)
+
+
+-- Downloading https://github.com/boostorg/system/archive/boost-1.85.0.tar.gz -> boostorg-system-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-system-boost-1.85.0.tar.gz
+-- Applying patch compat.diff
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-system/src/ost-1.85.0-e47a1ad8ab.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-system_x64-windows/share/boost-system/copyright
+-- Performing post-build validation

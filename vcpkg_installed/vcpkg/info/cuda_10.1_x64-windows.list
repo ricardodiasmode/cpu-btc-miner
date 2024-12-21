@@ -1,0 +1,8 @@
+x64-windows/
+x64-windows/share/
+x64-windows/share/cuda/
+x64-windows/share/cuda/copyright
+x64-windows/share/cuda/vcpkg-port-config.cmake
+x64-windows/share/cuda/vcpkg.spdx.json
+x64-windows/share/cuda/vcpkg_abi_info.txt
+x64-windows/share/cuda/vcpkg_find_cuda.cmake

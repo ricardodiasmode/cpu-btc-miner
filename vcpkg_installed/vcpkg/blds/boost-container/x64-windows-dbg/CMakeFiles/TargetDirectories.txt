@@ -1,0 +1,15 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/tests.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/check.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/tests-quick.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/check-quick.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/edit_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/rebuild_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/list_install_components.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/install.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/CMakeFiles/install/local.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/libs/container/CMakeFiles/boost_container.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/libs/container/CMakeFiles/edit_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/libs/container/CMakeFiles/rebuild_cache.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/libs/container/CMakeFiles/list_install_components.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/libs/container/CMakeFiles/install.dir
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container/x64-windows-dbg/libs/container/CMakeFiles/install/local.dir

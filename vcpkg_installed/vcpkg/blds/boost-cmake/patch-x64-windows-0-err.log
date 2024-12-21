@@ -1,0 +1,8 @@
+Checking patch include/BoostRoot.cmake...
+Hunk #2 succeeded at 200 (offset 12 lines).
+Hunk #3 succeeded at 209 (offset 12 lines).
+Hunk #4 succeeded at 220 (offset 13 lines).
+Hunk #5 succeeded at 270 (offset 14 lines).
+Hunk #6 succeeded at 381 (offset 14 lines).
+Hunk #7 succeeded at 405 (offset 13 lines).
+Applied patch include/BoostRoot.cmake cleanly.

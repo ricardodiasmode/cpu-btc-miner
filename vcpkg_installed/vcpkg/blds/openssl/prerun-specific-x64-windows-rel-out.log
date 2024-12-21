@@ -1,0 +1,22 @@
+Configuring OpenSSL version 3.3.0 for target VC-WIN64A
+Using os-specific seed configuration
+Created configdata.pm
+Running configdata.pm
+Created makefile.in
+Created makefile
+Created include\openssl\configuration.h
+
+**********************************************************************
+***                                                                ***
+***   OpenSSL has been successfully configured                     ***
+***                                                                ***
+***   If you encounter a problem while building, please open an    ***
+***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+***   and include the output from the following command:           ***
+***                                                                ***
+***       perl configdata.pm --dump                                ***
+***                                                                ***
+***   (If you are new to OpenSSL, you might want to consult the    ***
+***   'Troubleshooting' section in the INSTALL.md file first)      ***
+***                                                                ***
+**********************************************************************

@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/container_hash/archive/boost-1.85.0.tar.gz -> boostorg-container_hash-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-container_hash-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-container-hash/src/ost-1.85.0-6f8178029a.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-container-hash_x64-windows/share/boost-container-hash/copyright
+-- Performing post-build validation

@@ -1,0 +1,6 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/include/boost/implicit_cast.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/include/boost/polymorphic_cast.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/include/boost/polymorphic_pointer_cast.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/lib/cmake/boost_conversion-1.85.0/boost_conversion-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/lib/cmake/boost_conversion-1.85.0/boost_conversion-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-conversion_x64-windows/lib/cmake/boost_conversion-1.85.0/boost_conversion-config-version.cmake

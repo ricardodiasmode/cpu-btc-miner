@@ -1,0 +1,34 @@
+-- Downloading https://github.com/openssl/openssl/archive/openssl-3.3.0.tar.gz -> openssl-openssl-openssl-3.3.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/openssl-openssl-openssl-3.3.0.tar.gz
+-- Applying patch cmake-config.patch
+-- Applying patch command-line-length.patch
+-- Applying patch script-prefix.patch
+-- Applying patch windows/install-layout.patch
+-- Applying patch windows/install-pdbs.patch
+-- Applying patch unix/android-cc.patch
+-- Applying patch unix/move-openssldir.patch
+-- Applying patch unix/no-empty-dirs.patch
+-- Applying patch unix/no-static-libs-for-shared.patch
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/openssl/src/nssl-3.3.0-961d78b8a1.clean
+-- Downloading https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_5380_5361/strawberry-perl-5.38.0.1-64bit-portable.zip -> strawberry-perl-5.38.0.1-64bit-portable.zip...
+-- Found external ninja('1.11.0').
+-- Getting CMake variables for x64-windows
+-- Downloading https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/win64/nasm-2.16.01-win64.zip;https://gstreamer.freedesktop.org/src/mirror/nasm-2.16.01-win64.zip;https://vcpkg.github.io/assets/nasm/nasm-2.16.01-win64.zip -> nasm-2.16.01-win64.zip...
+-- Getting CMake variables for x64-windows
+-- Downloading https://download.qt.io/official_releases/jom/jom_1_1_4.zip;https://mirrors.ocf.berkeley.edu/qt/official_releases/jom/jom_1_1_4.zip;https://mirrors.ukfast.co.uk/sites/qt.io/official_releases/jom/jom_1_1_4.zip -> jom_1_1_4.zip...
+-- Prerunning x64-windows-dbg
+-- Building x64-windows-dbg
+-- Prerunning x64-windows-rel
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/lib/pkgconfig/openssl.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.2.0-1-any.pkg.tar.zst.
+-- Using cached msys2-msys2-runtime-3.4.10-4-x86_64.pkg.tar.zst.
+-- Using msys root at C:/Users/ricar/AppData/Local/vcpkg/downloads/tools/msys2/d33df895d441a36d
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/debug/lib/pkgconfig/libcrypto.pc
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/debug/lib/pkgconfig/libssl.pc
+-- Fixing pkgconfig file: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/debug/lib/pkgconfig/openssl.pc
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/share/openssl/usage
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/openssl_x64-windows/share/openssl/copyright
+-- Performing post-build validation

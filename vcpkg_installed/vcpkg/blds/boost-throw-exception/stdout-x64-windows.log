@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/throw_exception/archive/boost-1.85.0.tar.gz -> boostorg-throw_exception-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-throw_exception-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-throw-exception/src/ost-1.85.0-86061aa58d.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-throw-exception_x64-windows/share/boost-throw-exception/copyright
+-- Performing post-build validation

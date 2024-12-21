@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/tokenizer/archive/boost-1.85.0.tar.gz -> boostorg-tokenizer-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-tokenizer-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-tokenizer/src/ost-1.85.0-86e03dae84.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-tokenizer_x64-windows/share/boost-tokenizer/copyright
+-- Performing post-build validation

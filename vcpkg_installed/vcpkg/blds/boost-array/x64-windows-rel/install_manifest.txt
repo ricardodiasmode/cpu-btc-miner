@@ -1,0 +1,4 @@
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-array_x64-windows/include/boost/array.hpp
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-array_x64-windows/lib/cmake/boost_array-1.85.0/boost_array-targets.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-array_x64-windows/lib/cmake/boost_array-1.85.0/boost_array-config.cmake
+C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-array_x64-windows/lib/cmake/boost_array-1.85.0/boost_array-config-version.cmake

@@ -1,0 +1,9 @@
+-- Downloading https://github.com/boostorg/date_time/archive/boost-1.85.0.tar.gz -> boostorg-date_time-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-date_time-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-date-time/src/ost-1.85.0-ee5b51880c.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-date-time_x64-windows/share/boost-date-time/copyright
+-- Performing post-build validation

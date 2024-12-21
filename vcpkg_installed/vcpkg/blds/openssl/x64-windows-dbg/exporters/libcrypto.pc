@@ -1,0 +1,11 @@
+libdir=C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\openssl_x64-windows\debug\lib
+includedir=C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\openssl_x64-windows\debug\include
+enginesdir=C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\openssl_x64-windows\debug\lib\engines-3
+modulesdir=C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\openssl_x64-windows\debug\bin
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.0
+Libs: -L${libdir} -lcrypto
+Libs.private: ws2_32.lib gdi32.lib advapi32.lib crypt32.lib user32.lib
+Cflags: -I${includedir}

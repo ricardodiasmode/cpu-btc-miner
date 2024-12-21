@@ -1,0 +1,8 @@
+-- Downloading https://github.com/boostorg/numeric_conversion/archive/boost-1.85.0.tar.gz -> boostorg-numeric_conversion-boost-1.85.0.tar.gz...
+-- Extracting source C:/Users/ricar/AppData/Local/vcpkg/downloads/boostorg-numeric_conversion-boost-1.85.0.tar.gz
+-- Using source at C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-numeric-conversion/src/ost-1.85.0-8e9dc12b96.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-rel
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/share/boost-numeric-conversion/copyright
+-- Performing post-build validation

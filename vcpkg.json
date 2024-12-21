@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "boost-asio",
+    "cuda",
+    "fmt",
+    "nlohmann-json",
+    "openssl"
+  ]
+}

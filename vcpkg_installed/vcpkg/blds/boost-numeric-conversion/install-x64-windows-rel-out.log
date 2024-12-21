@@ -1,0 +1,41 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-numeric-conversion/x64-windows-rel'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+-- Install configuration: "Release"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/cast.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/bounds.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/cast.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/conversion_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/converter.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/converter_policies.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/bounds.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/conversion_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/converter.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/int_float_mixture.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/is_subranged.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/meta.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/old_numeric_cast.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/preprocessed
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/sign_mixture.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/int_float_mixture.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/int_float_mixture_enum.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/is_subranged.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/numeric_cast_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/sign_mixture.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/sign_mixture_enum.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/udt_builtin_mixture.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/lib/cmake/boost_numeric_conversion-1.85.0/boost_numeric_conversion-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/lib/cmake/boost_numeric_conversion-1.85.0/boost_numeric_conversion-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-numeric-conversion_x64-windows/lib/cmake/boost_numeric_conversion-1.85.0/boost_numeric_conversion-config-version.cmake
+[0/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-numeric-conversion\x64-windows-rel && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

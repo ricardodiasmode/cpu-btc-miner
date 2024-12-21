@@ -1,0 +1,140 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/cuda-x64-windows-10.1#13-02193073-8ef0-4270-89a6-c381776f47c6",
+  "name": "cuda:x64-windows@10.1#13 6500d84ee2c6b447c17f973b0c4f8a190e63ba44d9620570c97bde4a222f2d29",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
+    ],
+    "created": "2024-12-19T18:58:47Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "cuda",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "10.1#13",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@d7709c275f8ce58e6d1b4c71b8d37fba4a9a0377",
+      "homepage": "https://developer.nvidia.com/cuda-toolkit",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "A parallel computing platform and programming model",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "cuda:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "6500d84ee2c6b447c17f973b0c4f8a190e63ba44d9620570c97bde4a222f2d29",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/ricar/AppData/Local/vcpkg/registries/git-trees/d7709c275f8ce58e6d1b4c71b8d37fba4a9a0377/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "419d52a943abdcb7b71f3adb1ae525c6676e1cbb5fd9e3575dbd4203974bc6f8"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/ricar/AppData/Local/vcpkg/registries/git-trees/d7709c275f8ce58e6d1b4c71b8d37fba4a9a0377/vcpkg-port-config.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e4a18eca2059eb02826d6189f64df008a6b5e7f3e566ddefacf43160642abbd4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/ricar/AppData/Local/vcpkg/registries/git-trees/d7709c275f8ce58e6d1b4c71b8d37fba4a9a0377/vcpkg.json",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c8ae2ea09c71948e152b31dd08152601485bc9db10397a3ede0ae61ded16c3ed"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/ricar/AppData/Local/vcpkg/registries/git-trees/d7709c275f8ce58e6d1b4c71b8d37fba4a9a0377/vcpkg_find_cuda.cmake",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0db9717c2e16b36a3733cc22b8977881318d45413867bf7497d144034a9781aa"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

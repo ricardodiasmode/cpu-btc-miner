@@ -1,0 +1,66 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/boost-context/x64-windows-dbg'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+[1/6] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\ml64.exe -DBOOST_CONTEXT_DYN_LINK="" -DBOOST_CONTEXT_EXPORT=EXPORT -DBOOST_CONTEXT_NO_LIB="" -DBOOST_CONTEXT_SOURCE="" -Dboost_context_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\include -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include  -c -Fo libs\context\CMakeFiles\boost_context.dir\src\asm\make_x86_64_ms_pe_masm.asm.obj C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\asm\make_x86_64_ms_pe_masm.asm
+Microsoft (R) Macro Assembler (x64) Version 14.41.34120.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\asm\make_x86_64_ms_pe_masm.asm
+[2/6] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\ml64.exe -DBOOST_CONTEXT_DYN_LINK="" -DBOOST_CONTEXT_EXPORT=EXPORT -DBOOST_CONTEXT_NO_LIB="" -DBOOST_CONTEXT_SOURCE="" -Dboost_context_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\include -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include  -c -Fo libs\context\CMakeFiles\boost_context.dir\src\asm\ontop_x86_64_ms_pe_masm.asm.obj C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\asm\ontop_x86_64_ms_pe_masm.asm
+Microsoft (R) Macro Assembler (x64) Version 14.41.34120.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\asm\ontop_x86_64_ms_pe_masm.asm
+[3/6] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\ml64.exe -DBOOST_CONTEXT_DYN_LINK="" -DBOOST_CONTEXT_EXPORT=EXPORT -DBOOST_CONTEXT_NO_LIB="" -DBOOST_CONTEXT_SOURCE="" -Dboost_context_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\include -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include  -c -Fo libs\context\CMakeFiles\boost_context.dir\src\asm\jump_x86_64_ms_pe_masm.asm.obj C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\asm\jump_x86_64_ms_pe_masm.asm
+Microsoft (R) Macro Assembler (x64) Version 14.41.34120.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\asm\jump_x86_64_ms_pe_masm.asm
+[4/6] C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\cl.exe   /TP -DBOOST_CONTEXT_DYN_LINK="" -DBOOST_CONTEXT_EXPORT=EXPORT -DBOOST_CONTEXT_NO_LIB="" -DBOOST_CONTEXT_SOURCE="" -Dboost_context_EXPORTS -IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\include -external:IC:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include -external:W0 /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP  /D_DEBUG /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /Folibs\context\CMakeFiles\boost_context.dir\src\windows\stack_traits.cpp.obj /Fdlibs\context\CMakeFiles\boost_context.dir\ /FS -c C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\src\ost-1.85.0-aafc13249c.clean\libs\context\src\windows\stack_traits.cpp
+[5/6] C:\WINDOWS\system32\cmd.exe /C "cd . && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_dll --intdir=libs\context\CMakeFiles\boost_context.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1441~1.341\bin\Hostx64\x64\link.exe  libs\context\CMakeFiles\boost_context.dir\src\asm\make_x86_64_ms_pe_masm.asm.obj libs\context\CMakeFiles\boost_context.dir\src\asm\jump_x86_64_ms_pe_masm.asm.obj libs\context\CMakeFiles\boost_context.dir\src\asm\ontop_x86_64_ms_pe_masm.asm.obj libs\context\CMakeFiles\boost_context.dir\src\windows\stack_traits.cpp.obj  /out:stage\bin\boost_context-vc144-mt-gd-x64-1_85.dll /implib:stage\lib\boost_context-vc144-mt-gd-x64-1_85.lib /pdb:stage\bin\boost_context-vc144-mt-gd-x64-1_85.pdb /dll /version:1.85 /machine:x64 /nologo    /debug /INCREMENTAL  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+[5/6] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\boost-context\x64-windows-dbg && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Co-- Install configuration: "Debug"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/continuation.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/continuation_fcontext.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/continuation_ucontext.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/continuation_winfib.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/apply.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/config.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/disable_overload.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/exception.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/exchange.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/externc.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/fcontext.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/index_sequence.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/invoke.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/prefetch.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/detail/tuple.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/fiber.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/fiber_fcontext.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/fiber_ucontext.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/fiber_winfib.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/fixedsize_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/flags.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/pooled_fixedsize_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/posix
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/posix/protected_fixedsize_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/posix/segmented_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/preallocated.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/protected_fixedsize_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/segmented_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/stack_context.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/stack_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/windows
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/include/boost/context/windows/protected_fixedsize_stack.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/lib/boost_context-vc144-mt-gd-x64-1_85.lib
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/bin/boost_context-vc144-mt-gd-x64-1_85.dll
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/bin/boost_context-vc144-mt-gd-x64-1_85.pdb
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/lib/cmake/boost_context-1.85.0/boost_context-targets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/lib/cmake/boost_context-1.85.0/boost_context-targets-debug.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/lib/cmake/boost_context-1.85.0/boost_context-config.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/boost-context_x64-windows/debug/lib/cmake/boost_context-1.85.0/boost_context-config-version.cmake
+mmonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+

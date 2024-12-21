@@ -1,0 +1,67 @@
+Change Dir: 'C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/blds/nlohmann-json/x64-windows-dbg'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+-- Install configuration: "Debug"
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/adl_serializer.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/byte_container_with_subtype.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/abi_macros.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/conversions
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/conversions/from_json.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/conversions/to_chars.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/conversions/to_json.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/exceptions.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/hash.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input/binary_reader.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input/input_adapters.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input/json_sax.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input/lexer.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input/parser.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/input/position_t.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators/internal_iterator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators/iteration_proxy.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators/iterator_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators/iter_impl.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators/json_reverse_iterator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/iterators/primitive_iterator.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/json_custom_base_class.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/json_pointer.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/json_ref.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/macro_scope.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/macro_unscope.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/call_std
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/call_std/begin.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/call_std/end.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/cpp_future.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/detected.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/identity_tag.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/is_sax.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/std_fs.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/type_traits.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/meta/void_t.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/output
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/output/binary_writer.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/output/output_adapters.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/output/serializer.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/string_concat.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/string_escape.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/detail/value_t.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/json.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/json_fwd.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/ordered_map.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/thirdparty
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/thirdparty/hedley
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/thirdparty/hedley/hedley.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/./nlohmann_json.natvis
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake
+-- Installing: C:/Users/ricar/source/repos/btc-miner/vcpkg_installed/vcpkg/pkgs/nlohmann-json_x64-windows/debug/share/pkgconfig/nlohmann_json.pc
+[0/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\blds\nlohmann-json\x64-windows-dbg && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+
