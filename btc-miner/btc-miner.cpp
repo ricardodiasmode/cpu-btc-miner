@@ -8,6 +8,11 @@
 #include <openssl/evp.h>  // For OpenSSL 3.0
 #include <regex>
 
+static constexpr uint8_t SUBSCRIBE_MESSAGE_ID = 1;
+static constexpr uint8_t AUTHORIZE_MESSAGE_ID = 2;
+static constexpr uint8_t SUBMIT_MESSAGE_ID = 3;
+static constexpr bool DEBUG_WORK_DATA = false;
+
 // Definições gerais
 using namespace std;
 namespace asio = boost::asio;
@@ -163,7 +168,7 @@ public:
     void Subscribe()
     {
         json subscribe_request = {
-            {"id", 1},
+            {"id", SUBSCRIBE_MESSAGE_ID},
             {"method", "mining.subscribe"},
             {"params", {"RicardoRocky01.001"}}
         };
@@ -173,7 +178,7 @@ public:
     void Authenticate()
     {
         json auth_request = {
-            {"id", 2},
+            {"id", AUTHORIZE_MESSAGE_ID},
             {"method", "mining.authorize"},
             {"params", {"RicardoRocky01", "123456"}}
         };
@@ -183,7 +188,7 @@ public:
     void SendSolution(const uint32_t& nonce)
     {
         json solution_request = {
-                    {"id", 3},
+                    {"id", SUBMIT_MESSAGE_ID},
                     {"method", "mining.submit"},
                     {"params", {"RicardoRocky01.001", received_data.job_id, toHex(received_data.ExtraNonce2), received_data.nTime, nonce}}
         };
@@ -311,6 +316,33 @@ public:
         }
     }
 
+    bool ParseFirstReadStuff(std::stringstream& ss, std::string& json_chunk)
+    {
+        IsFirstRead = false;
+
+        cout << "Start parsing extra nonces..." << endl;
+        if (!ParseExtraNoncesResponse(ss, json_chunk))
+        {
+            cout << "Failed to parse subscribe response." << endl;
+            return false;
+        }
+        cout << "Extra nonces parsed successfully. Parsing subscribe response..." << endl << endl;
+
+        if (!ParseSubscribeResponse(ss, json_chunk))
+        {
+            cout << "Failed to parse subscribe response." << endl;
+            return false;
+        }
+        cout << "Subscribe response parsed successfully. Parsing difficulty data..." << endl << endl;
+
+        if (!ParseDifficultyData(ss, json_chunk))
+        {
+            cout << "Failed to difficulty data." << endl;
+            return false;
+        }
+        cout << "Difficulty data parsed successfully." << endl << endl;
+    }
+
     bool ReceiveWorkData()
     {
         cout << "Receiving work data..." << endl << endl;
@@ -318,7 +350,8 @@ public:
         std::vector<char> buffer(2048);
         std::string accumulated_data = received_data.remainder_data;
 
-        cout << "Last work data: " << accumulated_data << endl << endl;
+        if (DEBUG_WORK_DATA)
+            cout << "Last work data: " << accumulated_data << endl << endl;
 
         try {
             // Read data into the buffer
@@ -338,34 +371,12 @@ public:
             std::stringstream ss(accumulated_data);
             std::string json_chunk;
 
-            cout << "Work data: " << accumulated_data << endl;
+            if (DEBUG_WORK_DATA)
+                cout << "Work data: " << accumulated_data << endl << endl;
 
-            if (IsFirstRead)
-            {
-                IsFirstRead = false;
-
-                cout << "Start parsing extra nonces..." << endl << endl;
-                if (!ParseExtraNoncesResponse(ss, json_chunk))
-                {
-                    cout << "Failed to parse subscribe response." << endl;
-                    return false;
-                }
-                cout << "Extra nonces parsed successfully. Parsing subscribe response..." << endl;
-
-                if (!ParseSubscribeResponse(ss, json_chunk))
-                {
-                    cout << "Failed to parse subscribe response." << endl;
-                    return false;
-                }
-                cout << "Subscribe response parsed successfully. Parsing difficulty data..." << endl;
-
-                if (!ParseDifficultyData(ss, json_chunk))
-                {
-                    cout << "Failed to difficulty data." << endl;
-                    return false;
-                }
-                cout << "Difficulty data parsed successfully." << endl;
-            }
+            if (IsFirstRead &&
+                !ParseFirstReadStuff(ss, json_chunk))
+                return false;
 
             if (!ParseWorkData(ss, json_chunk))
             {
@@ -376,15 +387,53 @@ public:
 
             std::vector<std::string> messages;
             std::string line;
+            received_data.remainder_data = "";
 
             while (std::getline(ss, line)) {
-                // Only add non-empty lines (in case there are extra empty lines)
-                if (!line.empty()) {
-                    messages.push_back(line);
+                if (line.empty())
+                    continue;
+
+                try {
+                    // Try parsing the current JSON chunk
+                    json j = json::parse(line);
+
+                    if (j.contains("error"))
+                    {
+                        cout << "Remainder data parsed. We have an error: " << j["error"][1] << endl;
+                        cout << "The error was given by message id: " << j["id"] << endl;
+
+                        if (j["id"] == SUBMIT_MESSAGE_ID)
+                            cout << "Means that our submit was ignored." << endl;
+                        
+                        cout << endl;
+                    }
+                    else if (j.contains("method") &&
+                        j["method"] == "mining.notify") {
+                        if (DEBUG_WORK_DATA)
+                            cout << "Remainder data is a complete mining.notify. We will ignore it: " << line << endl << endl;
+                    }
+                    else {
+                        cout << "Could not identify wtf this is: " << line << endl << endl;
+                    }
+                }
+                catch (const std::exception& e) {
+                    if (line.find("mining.notify") != std::string::npos)
+                    {
+                        if (DEBUG_WORK_DATA)
+                            cout << "Parse remainder found. We are good to go: " << line << endl;
+
+                        received_data.remainder_data = line;
+                        if (DEBUG_WORK_DATA)
+                            cout << "Request remainder data: " << received_data.remainder_data << endl << endl;
+                    }
+                    else {
+                        cerr << "Error during remainder reception: " << e.what() << endl;
+                        return false;
+                    }
                 }
             }
-            received_data.remainder_data = messages[0];
-            cout << "Request remainder data: " << received_data.remainder_data << endl;
+
+            
         }
         catch (const std::exception& e) {
             cerr << "Error during work data reception: " << e.what() << endl;
@@ -444,8 +493,9 @@ public:
             // Calculate the target based on the difficulty
             uint64_t target = calculateTarget(received_data.difficulty);
 
-            cout << "Start mining iteration..." << endl;
+            cout << "--- Starting POW. ---" << endl;
             Mine(target);
+            cout << "--- POW finished. ---" << endl << endl;
         }
     }
 };
@@ -455,7 +505,7 @@ int main() {
         cout << "Initializing miner..." << endl << endl;
         asio::io_context io_context;
         Miner CurrentMiner(io_context);
-
+        
         cout << "Miner initialized. Subscribing..." << endl << endl;
         CurrentMiner.Subscribe();
 

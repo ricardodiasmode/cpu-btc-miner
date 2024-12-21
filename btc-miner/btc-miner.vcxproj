@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\ricar\source\repos\cpu-btc-miner\vcpkg_installed\x64-windows\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ricar\source\repos\cpu-btc-miner\vcpkg_installed\x64-windows\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\x64-windows\include;C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\boost-asio_x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ricar\source\repos\cpu-btc-miner\vcpkg_installed\x64-windows\include;C:\Users\ricar\source\repos\btc-miner\vcpkg_installed\vcpkg\pkgs\boost-asio_x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

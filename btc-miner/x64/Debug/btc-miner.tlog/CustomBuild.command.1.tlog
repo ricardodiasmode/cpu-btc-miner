@@ -1,2 +1,2 @@
-^C:\USERS\RICAR\SOURCE\REPOS\BTC-MINER\BTC-MINER\KERNEL.CU
+^C:\USERS\RICAR\SOURCE\REPOS\CPU-BTC-MINER\BTC-MINER\KERNEL.CU
 "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe" -arch=sm_86 -c "" -o "x64\Debug\.obj"
