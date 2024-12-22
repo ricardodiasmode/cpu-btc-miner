@@ -11,78 +11,123 @@
 static constexpr uint8_t SUBSCRIBE_MESSAGE_ID = 1;
 static constexpr uint8_t AUTHORIZE_MESSAGE_ID = 2;
 static constexpr uint8_t SUBMIT_MESSAGE_ID = 3;
+static constexpr char ACCOUNT_NAME[] = "RicardoRocky01";
+static constexpr char ACCOUNT_PASSWORD[] = "123456";
+static constexpr char WORKER_NAME[] = "RicardoRocky01.001";
+static constexpr char POOL_URL[] = "bs.poolbinance.com";
+
 static constexpr bool DEBUG_WORK_DATA = false;
+static constexpr bool DEBUG_MINING = false;
 
 // Definições gerais
 using namespace std;
 namespace asio = boost::asio;
 using json = nlohmann::json;
 
-std::vector<uint8_t> Int32ToByte(int32_t value) {
-    std::vector<uint8_t> bytes(4);
-    bytes[0] = (value >> 24) & 0xFF;
-    bytes[1] = (value >> 16) & 0xFF;
-    bytes[2] = (value >> 8) & 0xFF;
-    bytes[3] = value & 0xFF;
-    return bytes;
-}
-
-std::vector<uint8_t> StringToByte(const std::string& str) {
-    return std::vector<uint8_t>(str.begin(), str.end());
-}
-
-std::vector<uint8_t> VectorStringToByte(const std::vector<std::string>& strings) {
-    std::vector<uint8_t> bytes;
-    for (const auto& str : strings) {
-        std::vector<uint8_t> strBytes = StringToByte(str);
-        bytes.insert(bytes.end(), strBytes.begin(), strBytes.end());
-    }
-    return bytes;
-}
-
-std::string toHex(uint32_t value, int width = 8) {
-    std::stringstream stream;
-    stream << std::hex << std::setw(width) << std::setfill('0') << value;
+std::string IntToHex(uint64_t value, size_t width = 8) {
+    std::ostringstream stream;
+    stream << std::hex << std::setfill('0') << std::setw(width) << value;
     return stream.str();
 }
 
-std::vector<uint8_t> sha256(const std::vector<uint8_t>& data) {
-    // Create a new EVP context for SHA256
-    EVP_MD_CTX* ctx = EVP_MD_CTX_new();
-    if (ctx == nullptr) {
-        throw std::runtime_error("Failed to create EVP context");
+std::string StringToHex(const std::string& data) {
+    std::ostringstream oss;
+    for (unsigned char c : data) {
+        oss << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(c);
     }
-
-    // Initialize the SHA256 context
-    if (EVP_DigestInit_ex(ctx, EVP_sha256(), nullptr) != 1) {
-        EVP_MD_CTX_free(ctx);
-        throw std::runtime_error("Failed to initialize SHA256 context");
-    }
-
-    // Update the context with the data
-    if (EVP_DigestUpdate(ctx, data.data(), data.size()) != 1) {
-        EVP_MD_CTX_free(ctx);
-        throw std::runtime_error("Failed to update SHA256 context");
-    }
-
-    // Prepare the output buffer
-    std::vector<uint8_t> hash(EVP_MD_size(EVP_sha256()));
-
-    // Finalize the digest and get the result
-    if (EVP_DigestFinal_ex(ctx, hash.data(), nullptr) != 1) {
-        EVP_MD_CTX_free(ctx);
-        throw std::runtime_error("Failed to finalize SHA256 context");
-    }
-
-    // Free the context
-    EVP_MD_CTX_free(ctx);
-
-    return hash;
+    return oss.str();
 }
 
-// Function to perform a double SHA-256 hash
-std::vector<uint8_t> doubleSha256(const std::vector<uint8_t>& data) {
-    return sha256(sha256(data));
+// Utility: Converts an integer to a hex string (little-endian by default)
+std::string Int32ToHex(uint32_t value, bool littleEndian = true) {
+    std::ostringstream oss;
+    if (littleEndian) {
+        for (int i = 0; i < 4; ++i) {
+            oss << std::hex << std::setw(2) << std::setfill('0') << (value & 0xFF);
+            value >>= 8;
+        }
+    }
+    else {
+        oss << std::hex << std::setw(8) << std::setfill('0') << value;
+    }
+    return oss.str();
+}
+
+uint64_t stringToUint64(const std::string& hexString) {
+    if (hexString.size() < 16) {
+        throw std::invalid_argument("Hex string too short for uint64_t conversion.");
+    }
+    // Extract the first 16 characters of the hash
+    std::string first16 = hexString.substr(0, 16);
+
+    // Convert the first 16 characters to uint64_t
+    uint64_t value = 0;
+    std::istringstream iss(first16);
+    iss >> std::hex >> value;
+
+    if (iss.fail()) {
+        throw std::invalid_argument("Invalid hex string for uint64_t conversion.");
+    }
+
+    return value;
+}
+
+std::string VecInt8ToHex(const std::vector<uint8_t>& bytes) {
+    std::ostringstream oss;
+    for (uint8_t byte : bytes) {
+        oss << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(byte);
+    }
+    return oss.str();
+}
+
+void AppendLittleEndian(std::vector<uint8_t>& vec, uint32_t value) {
+    for (int i = 0; i < 4; ++i) {
+        vec.push_back((value >> (i * 8)) & 0xFF);
+    }
+}
+
+std::vector<uint8_t> HexStringToBytes(const std::string& hexStr) {
+    if (hexStr.size() % 2 != 0) {
+        throw std::invalid_argument("Hex string must have an even length");
+    }
+
+    std::vector<uint8_t> bytes(hexStr.size() / 2);
+    for (size_t i = 0; i < bytes.size(); ++i) {
+        bytes[i] = static_cast<uint8_t>(std::stoi(hexStr.substr(i * 2, 2), nullptr, 16));
+    }
+    return bytes;
+}
+
+std::string sha256d(const std::string& data) {
+    // Use RAII to ensure EVP context is cleaned up
+    struct EVP_MD_CTX_Deleter {
+        void operator()(EVP_MD_CTX* ctx) const { EVP_MD_CTX_free(ctx); }
+    };
+    std::unique_ptr<EVP_MD_CTX, EVP_MD_CTX_Deleter> ctx(EVP_MD_CTX_new());
+    if (!ctx) {
+        throw std::runtime_error("Failed to create EVP_MD_CTX");
+    }
+
+    // First SHA-256 pass
+    unsigned char first_hash[EVP_MAX_MD_SIZE];
+    unsigned int first_hash_len = 0;
+    if (EVP_DigestInit_ex(ctx.get(), EVP_sha256(), nullptr) != 1 ||
+        EVP_DigestUpdate(ctx.get(), data.data(), data.size()) != 1 ||
+        EVP_DigestFinal_ex(ctx.get(), first_hash, &first_hash_len) != 1) {
+        throw std::runtime_error("SHA-256 hashing failed in the first pass");
+    }
+
+    // Second SHA-256 pass
+    unsigned char second_hash[EVP_MAX_MD_SIZE];
+    unsigned int second_hash_len = 0;
+    if (EVP_DigestInit_ex(ctx.get(), EVP_sha256(), nullptr) != 1 ||
+        EVP_DigestUpdate(ctx.get(), first_hash, first_hash_len) != 1 ||
+        EVP_DigestFinal_ex(ctx.get(), second_hash, &second_hash_len) != 1) {
+        throw std::runtime_error("SHA-256 hashing failed in the second pass");
+    }
+
+    // Return as a hex string
+    return StringToHex(std::string(reinterpret_cast<char*>(second_hash), second_hash_len));
 }
 
 struct work_data
@@ -97,27 +142,79 @@ struct work_data
     uint32_t nTime;
     bool clean_jobs;
     uint64_t difficulty;
-    uint64_t ExtraNonce1;
+    std::string ExtraNonce1;
     uint32_t ExtraNonce2;
     uint32_t ExtraNonceSize2;
 
     std::string remainder_data = "";
 
-    std::vector<uint8_t> GetHeader()
-    {
-        std::vector<uint8_t> BlockVersionToVector = Int32ToByte(block_version);
-        std::vector<uint8_t> PreviousBlockToVector = StringToByte(prev_block_hash);
-        std::vector<uint8_t> MerkleBranchesToVector = VectorStringToByte(merkle_branches);
-        std::vector<uint8_t> TimestampToVector = Int32ToByte(nTime);
-        std::vector<uint8_t> BitsToVector = Int32ToByte(nBits);
+    std::string constructCoinbase() {
+        return generation_tx_part1 + ExtraNonce1 + Int32ToHex(ExtraNonce2) + generation_tx_part2;
+    }
 
-        std::vector<uint8_t> Header;
-        Header.insert(Header.end(), BlockVersionToVector.begin(), BlockVersionToVector.end());
-        Header.insert(Header.end(), PreviousBlockToVector.begin(), PreviousBlockToVector.end());
-        Header.insert(Header.end(), MerkleBranchesToVector.begin(), MerkleBranchesToVector.end());
-        Header.insert(Header.end(), TimestampToVector.begin(), TimestampToVector.end());
-        Header.insert(Header.end(), BitsToVector.begin(), BitsToVector.end());
-        return Header;
+    // Calculate the Merkle root
+    std::string calculateMerkleRoot() {
+        std::string hash = sha256d(constructCoinbase()); // Double SHA-256 of the coinbase
+
+        // Iterate through the branches
+        for (const auto& branch : merkle_branches) {
+            if (branch.size() != 64 || !std::all_of(branch.begin(), branch.end(), ::isxdigit)) {
+                throw std::invalid_argument("Invalid branch: must be a 64-character hexadecimal string");
+            }
+
+            // Combine hashes (big-endian ordering assumed for concatenation)
+            std::string branch_bytes = StringToHex(branch);
+            hash = sha256d(hash + branch_bytes);
+        }
+
+        return hash; // Final Merkle root
+    }
+
+    std::string SerializeHeader(uint32_t version, const std::string& previousHash, const std::string& merkleRoot,
+        uint32_t nTime, uint32_t bits, uint32_t nonce) {
+        // Validate input sizes
+        if (previousHash.size() != 64 || !std::all_of(previousHash.begin(), previousHash.end(), ::isxdigit)) {
+            throw std::invalid_argument("Invalid previous hash: must be a 64-character hexadecimal string");
+        }
+        if (merkleRoot.size() != 64 || !std::all_of(merkleRoot.begin(), merkleRoot.end(), ::isxdigit)) {
+            throw std::invalid_argument("Invalid Merkle root: must be a 64-character hexadecimal string");
+        }
+
+        // Convert fields to bytes
+        std::vector<uint8_t> headerBytes;
+        headerBytes.reserve(80); // Bitcoin block headers are always 80 bytes
+
+        // Append version (little-endian)
+        AppendLittleEndian(headerBytes, version);
+
+        // Append previous block hash (big-endian)
+        auto prevHashBytes = HexStringToBytes(previousHash);
+        headerBytes.insert(headerBytes.end(), prevHashBytes.rbegin(), prevHashBytes.rend()); // Reverse for big-endian
+
+        // Append Merkle root (big-endian)
+        auto merkleRootBytes = HexStringToBytes(merkleRoot);
+        headerBytes.insert(headerBytes.end(), merkleRootBytes.rbegin(), merkleRootBytes.rend()); // Reverse for big-endian
+
+        // Append nTime (little-endian)
+        AppendLittleEndian(headerBytes, nTime);
+
+        // Append bits (little-endian)
+        AppendLittleEndian(headerBytes, bits);
+
+        // Append nonce (little-endian)
+        AppendLittleEndian(headerBytes, nonce);
+
+        // Return the header as a hex string
+        return VecInt8ToHex(headerBytes);
+    }
+
+    std::string GetHeader(uint32_t nonce) 
+    {
+        return SerializeHeader(block_version, prev_block_hash, calculateMerkleRoot(), nTime, nBits, nonce);
+    }
+
+    std::string AppendExtraNonce() {
+        return ExtraNonce1 + IntToHex(ExtraNonce2);
     }
 
     work_data() = default;
@@ -136,18 +233,17 @@ class Miner
 
 public:
 
-    // Converter string de hash para um valor numérico
-    uint64_t HashToTarget(const string& hash) {
-        return stoull(hash.substr(0, 16), nullptr, 16);
+    bool isValidExtraNonce2(std::string extraNonce2) {
+        return extraNonce2.size() <= size_t(4) * 2; // Each byte is 2 hex characters
     }
 
     Miner(asio::io_context& io_context) : MinerSocket(io_context)
     {
         try {
             boost::asio::ip::tcp::resolver resolver(io_context);
-            auto endpoints = resolver.resolve("sha256.poolbinance.com", "3333");
+            auto endpoints = resolver.resolve(POOL_URL, "3333");
             boost::asio::connect(MinerSocket, endpoints);
-            std::cout << "Connection successful!" << std::endl;
+            std::cout << "Connection successful on URL: " << POOL_URL << std::endl;
         }
         catch (const boost::system::system_error& e) {
             std::cerr << "Connection failed: " << e.what() << std::endl;
@@ -169,7 +265,7 @@ public:
         json subscribe_request = {
             {"id", SUBSCRIBE_MESSAGE_ID},
             {"method", "mining.subscribe"},
-            {"params", {"RicardoRocky01.001"}}
+            {"params", {WORKER_NAME}}
         };
         send_request(MinerSocket, subscribe_request);
     }
@@ -179,17 +275,22 @@ public:
         json auth_request = {
             {"id", AUTHORIZE_MESSAGE_ID},
             {"method", "mining.authorize"},
-            {"params", {"RicardoRocky01", "123456"}}
+            {"params", {ACCOUNT_NAME, ACCOUNT_PASSWORD}}
         };
         send_request(MinerSocket, auth_request);
     }
 
     void SendSolution(const uint32_t& nonce)
     {
+        if (!isValidExtraNonce2(IntToHex(received_data.ExtraNonce2)))
+        {
+            cerr << "Submitted ExtraNonce2 is not valid. Request will probably fail." << endl;
+        }
+
         json solution_request = {
                     {"id", SUBMIT_MESSAGE_ID},
                     {"method", "mining.submit"},
-                    {"params", {"RicardoRocky01.001", received_data.job_id, toHex(received_data.ExtraNonce2), received_data.nTime, nonce}}
+                    {"params", {WORKER_NAME, received_data.job_id, IntToHex(received_data.ExtraNonce2), received_data.nTime, Int32ToHex(nonce)}}
         };
         send_request(MinerSocket, solution_request);
     }
@@ -197,8 +298,7 @@ public:
     void ParseExtraNoncesResponse(json j) {
         // Extra nonce message like: {"error":null,"id":1,"result":[[["mining.notify","0000473d1"],["mining.set_difficulty","0000473d2"]],"0000473d",8]}
         cout << "Parsing extra nonces..." << endl;
-        std::string ExtraNonce1 = j["result"][1];
-        received_data.ExtraNonce1 = std::stoull(ExtraNonce1);
+        received_data.ExtraNonce1 = j["result"][1];
         received_data.ExtraNonceSize2 = j["result"][2];
     }
 
@@ -251,7 +351,7 @@ public:
 
     bool ReceiveWorkData()
     {
-        cout << "Receiving work data..." << endl << endl;
+        cout << "Receiving work data..." << endl;
 
         std::vector<char> buffer(2048);
         std::string accumulated_data = received_data.remainder_data;
@@ -301,6 +401,9 @@ public:
                         {
                             ParseWorkData(j);
                         }
+                        else {
+                            cout << "Could not understand data: " << line << endl;
+                        }
                     }
                     else if (j.contains("error") && j["error"].is_null())
                     {
@@ -331,6 +434,9 @@ public:
 
                         cout << endl;
                     }
+                    else {
+                        cout << "Could not understand data: " << line << endl;
+                    }
                 }
                 catch (const std::exception& e) {
                     if (line.find("mining.notify") != std::string::npos)
@@ -360,31 +466,36 @@ public:
         uint32_t nonce = 0;
 
         while (true) {
-            std::vector<uint8_t> blockHeader = received_data.GetHeader();
-            std::vector<uint8_t> NonceAsVector = Int32ToByte(nonce);
-            blockHeader.insert(blockHeader.end(), NonceAsVector.begin(), NonceAsVector.end());
+            std::string blockHeader = received_data.GetHeader(nonce);
 
-            // Perform the double SHA-256
-            std::vector<uint8_t> result = doubleSha256(blockHeader);
+            if (DEBUG_MINING)
+                cout << "Block header: " << blockHeader << endl;
 
-            // Convert the first 8 bytes of the hash to uint64_t
-            uint64_t hashValue = 0;
-            for (int i = 0; i < 8; i++) {
-                hashValue = (hashValue << 8) | result[i];
-            }
+            // Compute the double SHA-256 hash of the block header
+            std::string hashHex = sha256d(blockHeader);
+
+            if (DEBUG_MINING)
+                cout << "Hash (hex): " << hashHex << endl;
+
+            // Convert hashHex to a numeric value for comparison
+            uint64_t hashValue = stringToUint64(hashHex.substr(0, 16)); // Only consider the first 64 bits for comparison
+
+            if (DEBUG_MINING)
+                cout << "Hash value (numeric): " << hashValue << endl;
 
             // Verify if the hash meets the target
             if (hashValue <= target) {
+
                 cout << "Nonce found: " << nonce << endl;
                 cout << "Hash: " << hashValue << endl;
+                cout << "target: " << target << endl;
 
                 SendSolution(nonce);
                 break; // Break the loop once a valid solution is found
             }
 
+            // Increment ExtraNonce2 and reset if it exceeds the limit
             received_data.ExtraNonce2++;
-
-            // Reset ExtraNonce2 if it exceeds the limit
             if (received_data.ExtraNonce2 > received_data.ExtraNonceSize2) {
                 received_data.ExtraNonce2 = 0;
             }
@@ -396,8 +507,8 @@ public:
     void StartMiner() {
         while (true) {
             if (!ReceiveWorkData()) {
-                cout << "Miner failed to receive work data. Trying again..." << endl << endl;
-                continue;
+                cout << "Miner failed to receive work data." << endl << endl;
+                break;
             }
 
             // Calculate the target based on the difficulty
@@ -426,7 +537,7 @@ int main() {
         CurrentMiner.StartMiner();
     }
     catch (std::exception& e) {
-        cerr << "Erro: " << e.what() << endl;
+        cerr << "Error: " << e.what() << endl;
         return 1;
     }
 
