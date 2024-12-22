@@ -18,6 +18,7 @@ static constexpr char POOL_URL[] = "bs.poolbinance.com";
 
 static constexpr bool DEBUG_WORK_DATA = false;
 static constexpr bool DEBUG_MINING = false;
+static constexpr bool DEBUG_HASH_RATE = true;
 
 // Definições gerais
 using namespace std;
@@ -465,6 +466,10 @@ public:
     void Mine(uint64_t target) {
         uint32_t nonce = 0;
 
+        uint64_t nHashes = 0;
+
+        std::chrono::time_point<std::chrono::system_clock> StartTime = std::chrono::system_clock::now();
+
         while (true) {
             std::string blockHeader = received_data.GetHeader(nonce);
 
@@ -473,6 +478,18 @@ public:
 
             // Compute the double SHA-256 hash of the block header
             std::string hashHex = sha256d(blockHeader);
+            nHashes++;
+
+            // If did one billion hashes, print time
+            if (DEBUG_HASH_RATE && 
+                nHashes % 10000 == 0)
+            {
+                std::chrono::time_point<std::chrono::system_clock> Now = std::chrono::system_clock::now();
+
+                const auto DeltaTime = std::chrono::duration_cast<chrono::seconds>(Now - StartTime).count();
+
+                cout << "Made " << nHashes << " hashes in " << DeltaTime << " seconds.";
+            }
 
             if (DEBUG_MINING)
                 cout << "Hash (hex): " << hashHex << endl;
